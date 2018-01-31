@@ -1,13 +1,15 @@
 ﻿using System;
 
-namespace Hello
+namespace Tablice
+
 {
-    class Program
+
+    static void Main;
+    class Tablice
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Witaj świecie");
-            Console.WriteLine(DateTime.Now);
-        }
+        string[] array = new string[4];
+        int arrayLength = array.Length;
+        Console.WriteLine(arrayLength);
     }
 }
+
