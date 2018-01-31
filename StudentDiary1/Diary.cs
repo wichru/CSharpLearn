@@ -8,8 +8,12 @@ namespace StudentDiary1
 {
     class Diary
     {
+        public Diary() // konstruktor domyślny skrót - CTOR i x2 TAB
+        {
+            ratings = new List<float>(); // inicjalizacja pól w konstruktorze
+        }
         // Zmienne - pola
-        List<float> ratings = new List<float>();
+        List<float> ratings
 
 
         // Zachowanie, metody
