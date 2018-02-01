@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace StudentDiary1
 {
-    class Program
-    {
+    class Program   // KLASA JEST SZABLONEM DO TWORZENIA OBIEKTÓW!!!!!!!
+    {   
         static void Main(string[] args)
         {
             Diary diary = new Diary(); // wywołany został konstruktor domyślny => tworzy obiekt któy jest instancje klasy poprzez konstruktor 'new' 
