@@ -13,7 +13,7 @@ namespace StudentDiary1
             ratings = new List<float>(); // inicjalizacja pól w konstruktorze
         }
         // Zmienne - pola
-        List<float> ratings
+        List<float> ratings;
 
 
         // Zachowanie, metody
