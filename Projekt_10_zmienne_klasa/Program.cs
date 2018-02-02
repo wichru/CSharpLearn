@@ -14,7 +14,7 @@ namespace Projekt_10_zmienne_referencyjne
             Diary diary = new Diary(); // zmienne referencyjne - nie przechowują bezpośrendio obiektów tak jak typy proste np int = 2 (przechowuje 2)
             diary.Add_ratings(3);     // przechowują za to wskaźnik do obiektu
             diary.Add_ratings(5);
-
+            
             //diary = new Diary(); // zmienna 'diary' wskazuje na nowy obiekt - 'Diary' - więc jego zawartość będzie taka jak nowego obiektu (logiczne)
             //diary.Add_ratings(8);
 

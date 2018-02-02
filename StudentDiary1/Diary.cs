@@ -12,15 +12,16 @@ namespace StudentDiary1
         {
             ratings = new List<float>(); // inicjalizacja pól w konstruktorze
         }
-        // Zmienne - pola
+        // Zmienne - pola inaczej dane
         List<float> ratings;
 
 
-        // Zachowanie, metody
-
+        // Zachowanie inaczej metody
+     
         public void Add_ratings(float rating)
         {
-            ratings.Add(rating);
+           
+            ratings.Add(rating); // METODA DODAWANIA OCENY
         }
 
         public float CalcAverage()

@@ -17,10 +17,13 @@ namespace Projekt_10_zmienne_referencyjne
 
 
         // Zachowanie, metody
-
+        /// <summary>
+        /// Dodawanie oceny
+        /// </summary>
+        /// <param name="rating">nowa ocena</param>
         public void Add_ratings(float rating)
         {
-            ratings.Add(rating);
+            ratings.Add(rating); // Metoda dodająca nową ocene
         }
 
         public float CalcAverage()
