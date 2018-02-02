@@ -23,28 +23,22 @@ namespace StudentDiary1
            
             ratings.Add(rating); // METODA DODAWANIA OCENY
         }
-
-        public float CalcAverage()
+        
+        public DiaryStatictics ComputerStat()
         {
-            float sum = 0, avg = 0;
+            DiaryStatictics stats = new DiaryStatictics();
+            float sum = 0f;
 
             foreach (var rating in ratings)
             {
                 sum += rating;
             }
 
-            avg = sum / ratings.Count();
-
-            return avg;
-        }
-
-        public float MaxRating ()
-        {
-            return ratings.Max();
-        }
-        public float MinRating()
-        {
-            return ratings.Min();
+            stats.AverageGrade = sum / ratings.Count();
+            stats.MaxGrade = ratings.Max();
+            stats.MinGrade = ratings.Min();
+            
+            return stats;
         }
     }
 }

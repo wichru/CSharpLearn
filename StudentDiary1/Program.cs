@@ -18,7 +18,9 @@ namespace StudentDiary1
 
             //float avg = diary.CalcAverage();
             //float max = diary.MaxRating();
-            //float min = diary.MinRating();
+            //float min = diary.MinRating
+
+            DiaryStatictics stats = diary.ComputerStat();
 
             for (; ; )
             {
@@ -48,9 +50,10 @@ namespace StudentDiary1
                 }
                 
             }
-            Console.WriteLine("Średnia twoich ocen to:" + diary.CalcAverage());
-            Console.WriteLine("Najwyższa ocena to:" + diary.MaxRating());
-            Console.WriteLine("Najniższa ocena to:" + diary.MinRating());
+            
+            Console.WriteLine("Średnia twoich ocen to:" + stats.AverageGrade);
+            Console.WriteLine("Najwyższa ocena to:" + stats.MaxGrade);
+            Console.WriteLine("Najniższa ocena to:" + stats.MinGrade);
             Console.ReadKey();
         }
     }
